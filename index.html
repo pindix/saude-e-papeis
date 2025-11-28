@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Papéis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+</head>
+<body>
+ 
+    <!-- INÍCIO -->
+    <section id="inicio">
+        <div class="inicio_div" id="foco">
+            <h3 data-aos="fade-right" id="tema">Saúde <br> <span>e Papéis</span> </h3> 
+            
+            <p data-aos="fade-top" id="texto">Espaço criado para apoiar estudantes de Saúde com a edição, organização e formatação de trabalhos académicos. </p>
+            <br> 
+            <a  data-aos="fade-top" class="bolha" href="#sobre" id="a_sobre">Mais</a> 
+            <a id="a_solicitar" onclick="solicitar()" data-aos="fade-right" class="reta" href="#">Solicitar Trabalho <i class="ri-whatsapp-line"></i> </a>
+            <video autoplay muted loop playsinline id="bg-video">
+              <source src="v2.mp4" type="video/mp4">
+              O teu navegador não suporta vídeos em HTML5.
+            </video>
+        </div>
+
+        <!-- POP-UP -->
+        <div class="pop_up" id="pop_up">
+            <i onclick="fechar_solicitacao()" class="ri-close-circle-fill"></i>
+            <p id="valor">É necessário pagar 50% antes de começarmos o trabalho.</p>
+            <br>
+            <a href="https://wa.me/244929129797?text=Olá%2C%20gostaria de solicitar %20um%20trabalho%20e%20entender%20melhor%20como%20as%20coisas%20vão%20funcionar." >Concordar e Solicitar</a>
+        </div>
+        <!-- POP-UP -->
+
+
+
+
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div id="div_sobre"  data-aos="fade-left">
+            <h3>Sobre o Trabalho</h3>
+            <p class="sobre_p">Nossos trabalhos são organizados por profissionais com experiência técnica e prática na área da saúde, garantindo exclusividade para cada cliente.</p> <br>
+            <p class="sobre_p"> <strong>Economize até 60% em comparação com serviços tradicionais. <br>
+Digite o número de páginas e saiba o preço.</strong>
+             </p> <br> <br> 
+
+            <div>
+                <div id="campo">
+                    <input type="number" oninput="calcular_preco()" placeholder="Digite aqui..." id="pag"> 
+                    <p>pag</p>
+                </div>
+                <p id="preco"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTA -->
+    <section id="nota">
+        <div  data-aos="fade-right" >
+            <h3> <i class="ri-information-2-line"></i> NOTA</h3>
+            <p>Após o término do trabalho, ele será enviado pelo WhatsApp no formato .word ou .pdf pronto para impreensão. <br> <br>
+            Forneceremos-lhe o trabalho apenas no formato electrónico e não físico. </p>
+             <a  class="reta " href="#inicio" onclick="chamar()">Solicitar trabalho <i class="ri-whatsapp-line"></i></a>
+        </div>
+      
+    </section>
+
+    <!-- DADOS -->
+    <section id="dados" >
+        <div id="dados_div" >
+            <div class="info">
+             <p class="logo">MPINDI SOFT</p>
+             <p>Contacto: +244 929 12 97 97 <i></i> </p>
+             <p ><a style="color:white" href="https://mail.google.com/mail/?view=cm&fs=1&to=sebastiaompindi@gmail.com">sebastiaompindi@gmail.com </a></p>
+            </div>
+            <div class="info">
+             <a class="ri-home-4-fill" href="#inicio"></a>  <br> <br>
+             <a class="ri-whatsapp-line" href="https://wa.me/244929129797?text=." ></a> 
+            </div>
+         </div>
+    </section>
+
+    <script src="script.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    
+
+</body>
+</html>
