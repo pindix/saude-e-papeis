@@ -273,12 +273,13 @@ i {
         font-size: 16px;
     }
     #pag {
-        width: 9rem;
+        width: 10rem;
     }
 
 
     #nota div {
         padding: 1rem;
+        padding-bottom: 2rem;
     }
     #nota p {
         font-size: 16px;
